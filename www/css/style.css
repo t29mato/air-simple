@@ -1,6 +1,9 @@
 img {
   max-width: 100%;
 }
+footer {
+  background-color: gainsboro;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
