@@ -34,6 +34,33 @@ html {
     max-width: 680px;
     padding: 0 15px;
   }
-  .container .text-muted {
+  .container p {
     margin: 20px 0;
   }
+
+.input-range[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #eaeaea;
+  height: 2px;
+  width: 100%;
+  border-radius: 6px;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-color: #07be19;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+}

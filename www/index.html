@@ -14,7 +14,7 @@
 <body>
     <div class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a href="./" class="navbar-brand"><img src="img/tank.svg" height="40"> Air Comsumption</a>
+            <a href="./" class="navbar-brand"><img src="img/tank.svg" height="40"> Air Consumption</a>
             <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>    -->
@@ -37,23 +37,23 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <label>エントリー残圧：<output id="entry">200</output>気圧</label>
-                            <input type="range" class="form-control" value="200" min="0" max="240" step="10" oninput="document.getElementById('entry').value=this.value">
+                            <input type="range" class="form-control input-range" value="200" min="0" max="240" step="10" oninput="document.getElementById('entry').value=this.value">
                         </li>
                         <li class="list-group-item">
                             <label>エキジット残圧：<output id="exit">100</output>気圧</label>
-                            <input type="range" class="form-control" value="100" min="0" max="240" step="10" oninput="document.getElementById('exit').value=this.value">
+                            <input type="range" class="form-control input-range" value="100" min="0" max="240" step="10" oninput="document.getElementById('exit').value=this.value">
                         </li>
                         <li class="list-group-item">
                             <label>タンク容量：<output id="volume">10</output>リットル</label>
-                            <input type="range" class="form-control" value="10" min="8" max="14" step="1" oninput="document.getElementById('volume').value=this.value">
+                            <input type="range" class="form-control input-range" value="10" min="8" max="14" step="1" oninput="document.getElementById('volume').value=this.value">
                         </li>
                         <li class="list-group-item">
                             <label>平均水深：<output id="depth">10</output>メートル</label>
-                            <input type="range" class="form-control" value="10" min="1" max="30" step="1" oninput="document.getElementById('depth').value=this.value">
+                            <input type="range" class="form-control input-range" value="10" min="1" max="30" step="1" oninput="document.getElementById('depth').value=this.value">
                         </li>
                         <li class="list-group-item">
                             <label>潜水時間：<output id="time">40</output>分</label>
-                            <input type="range" class="form-control" value="40" min="20" max="80" step="5" oninput="document.getElementById('time').value=this.value">
+                            <input type="range" class="form-control input-range" value="40" min="20" max="80" step="5" oninput="document.getElementById('time').value=this.value">
                         </li>
                         <li class="list-group-item">
                             <h4>比較する</h4>
@@ -107,9 +107,9 @@
             </div>
         </div>
     </div>
-    <footer class="fixed-bottom bg-light">
+    <footer class="fixed-bottom bg-dark">
         <div class="container">
-            <p class="text-muted">あなたの1分間あたりのエア消費量は<span class="font-weight-bold"><output id="result">12.5</output>リットル</span>です。</p>
+            <p class="text-white">あなたの1分間あたりのエア消費量は<span class="font-weight-bold"><output id="result">12.5</output>リットル</span>です。</p>
         </div>
     </footer>
     </form>
