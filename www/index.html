@@ -6,6 +6,7 @@
 <title>エア消費量計算サイト(簡易版)</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="apple-touch-icon" sizes="152x152" href="【 アップロードした画像のURL 】" />
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -56,6 +57,12 @@
                             <input type="range" class="form-control input-range" value="40" min="20" max="80" step="5" oninput="document.getElementById('time').value=this.value">
                         </li>
                         <li class="list-group-item">
+                            <div class="alert alert-primary">
+                                あなたの1分間あたりのエア消費量は<span class="font-weight-bold"><output id="result">12.5</output>リットル</span>です。
+                            </div>
+                        </li>
+                                    
+                        <li class="list-group-item">
                             <h4>比較する</h4>
                             <table class="table">
                                 <thead>
@@ -85,7 +92,7 @@
                             </table>
                         </li>
                     </ul>
-                    
+                                
             </div>
             <div id="formula" class="tab-pane">
                 <ul class="list-group list-group-flush">
@@ -107,9 +114,9 @@
             </div>
         </div>
     </div>
-    <footer class="fixed-bottom bg-dark">
+    <footer class="footer">
         <div class="container">
-            <p class="text-white">あなたの1分間あたりのエア消費量は<span class="font-weight-bold"><output id="result">12.5</output>リットル</span>です。</p>
+            <p>CopyRight <a href="https://twitter.com/t2kmato" target="_blank">@t2kmato</a></p>
         </div>
     </footer>
     </form>
