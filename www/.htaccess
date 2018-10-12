@@ -1,0 +1,8 @@
+#suPHP_ConfigPath /home/drindzup/air-consumption.work/xserver_php/
+#AddHandler fcgid-script .php .phps
+#FCGIWrapper "/home/drindzup/air-consumption.work/xserver_php/php-cgi" .php
+#FCGIWrapper "/home/drindzup/air-consumption.work/xserver_php/php-cgi" .phps
+
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

@@ -34,6 +34,7 @@
     <div class="container">
       <br>
       <h4>エア消費量計算サイト(簡易版)</h4>
+      <div id="app"></div>
       <ul class="nav nav-tabs py-md-3">
         <li class="nav-item"><a href="#calculate" class="nav-link active" data-toggle="tab">計算する</a></li>
         <li class="nav-item"><a href="#formula" class="nav-link" data-toggle="tab">計算式</a></li>
@@ -124,11 +125,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-<<<<<<< HEAD:www/index.html
-          navigator.serviceWorker.register('./scripts/sw.js').then(function(registration) {
-=======
           navigator.serviceWorker.register('%PUBLIC_URL%/scripts/sw.js').then(function(registration) {
->>>>>>> 7dd366e82cdf4d18aa2c9fcacee21fa8538c2309:public/index.html
             // Registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, function(err) {

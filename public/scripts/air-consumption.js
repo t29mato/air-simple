@@ -1,4 +1,8 @@
 var calculator = function (entry, exit, volume, depth, time) {
+  if (parseInt(entry) < parseInt(exit)) {
+    return NaN;
+  }
+
   var consumedAir = entry - exit;
   var pressure = depth / 10 + 1;
 
