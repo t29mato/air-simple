@@ -13,19 +13,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>エア消費量計算サイト(簡易版)</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/icon/favicon.ico">
-  <link rel="icon" type="image/vnd.microsoft.icon" href="img/icon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="img/icon/android-chrome-512x512.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="img/icon/icon-512x512.png">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="%PUBLIC_URL%/img/icon/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="%PUBLIC_URL%/img/icon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/img/icon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/img/icon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/img/icon/icon-512x512.png">
 </head>
 <body>
   <div class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a href="./" class="navbar-brand"><img src="img/tank.svg" height="40"> Air Consumption</a>
+      <a href="./" class="navbar-brand"><img src="%PUBLIC_URL%/img/tank.svg" height="40"> Air Consumption</a>
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>    -->
@@ -125,7 +124,11 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
+<<<<<<< HEAD:www/index.html
           navigator.serviceWorker.register('./scripts/sw.js').then(function(registration) {
+=======
+          navigator.serviceWorker.register('%PUBLIC_URL%/scripts/sw.js').then(function(registration) {
+>>>>>>> 7dd366e82cdf4d18aa2c9fcacee21fa8538c2309:public/index.html
             // Registration was successful
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, function(err) {
@@ -138,6 +141,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="./scripts/air-consumption.js"></script>
+    <script src="%PUBLIC_URL%/scripts/air-consumption.js"></script>
   </body>
   </html>
