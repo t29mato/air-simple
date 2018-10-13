@@ -8,7 +8,7 @@ $ npm install
 ```
 package.jsonに記載されたパッケージがインストールされます。
 
-## Development
+## Set Up Local Environment
 ```
 $ npm start
 ```
