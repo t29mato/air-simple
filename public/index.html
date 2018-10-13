@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931690-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-120931690-1');
@@ -21,6 +22,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/img/icon/android-chrome-512x512.png">
   <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/img/icon/icon-512x512.png">
 </head>
+
 <body>
   <div class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
@@ -34,6 +36,7 @@
       <div id="app"></div>
       <ul class="nav nav-tabs py-md-3">
         <li class="nav-item"><a href="#calculate" class="nav-link active" data-toggle="tab">計算する</a></li>
+        <li class="nav-item"><a href="#compare" class="nav-link" data-toggle="tab">比較する</a></li>
         <li class="nav-item"><a href="#formula" class="nav-link" data-toggle="tab">計算式</a></li>
       </ul>
       <div class="tab-content">
@@ -64,6 +67,10 @@
                 あなたの1分間あたりのエア消費量は<span class="font-weight-bold"><output id="result">12.5</output>リットル</span>です。
               </div>
             </li>
+          </ul>
+        </div>
+        <div id="compare" class="tab-pane">
+          <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <h4>比較する</h4>
               <table class="table">
@@ -89,52 +96,53 @@
                     <th scope="row">多い</th>
                     <td>20 L/min 以上</td>
                     <td>15 L/min 以上<td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-            </ul>
-          </div>
-          <div id="formula" class="tab-pane">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <h3>計算式</h3>
-                <img src="img/formul.png" alt="計算式">
-              </li>
-              <li class="list-group-item">
-                ・エントリー残圧：200気圧<br>
-                ・エキジット残圧：100気圧<br>
-                ・タンク容量：10リットル<br>
-                ・平均水深：10メートル(2気圧)<br>
-                ・潜水時間：40分<br><br>
-                の場合は、((200-100)*10)/2/40で、12.5L/minとなります。
-              </li>
-            </ul>
-          </div>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+        </div>
+        <div id="formula" class="tab-pane">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h3>計算式</h3>
+              <img src="img/formul.png" alt="計算式">
+            </li>
+            <li class="list-group-item">
+              ・エントリー残圧：200気圧<br>
+              ・エキジット残圧：100気圧<br>
+              ・タンク容量：10リットル<br>
+              ・平均水深：10メートル(2気圧)<br>
+              ・潜水時間：40分<br><br>
+              の場合は、((200-100)*10)/2/40で、12.5L/minとなります。
+            </li>
+          </ul>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <p>CopyRight <a href="https://twitter.com/t2kmato" target="_blank">@t2kmato</a></p>
-        </div>
-      </footer>
-    </form>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('%PUBLIC_URL%/scripts/sw.js').then(function(registration) {
-            // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, function(err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-          });
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>CopyRight <a href="https://twitter.com/t2kmato" target="_blank">@t2kmato</a></p>
+      </div>
+    </footer>
+  </form>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('%PUBLIC_URL%/scripts/sw.js').then(function (registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
         });
-      }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="%PUBLIC_URL%/scripts/air-consumption.js"></script>
-  </body>
-  </html>
+      });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="%PUBLIC_URL%/scripts/air-consumption.js"></script>
+</body>
+
+</html>
