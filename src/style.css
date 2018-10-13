@@ -31,9 +31,6 @@ html {
     max-width: 680px;
     padding: 0 15px;
   }
-  .container p {
-    margin: 20px 0;
-  }
 
 .input-range[type="range"] {
   -webkit-appearance: none;
@@ -60,4 +57,12 @@ html {
     border-radius: 50%;
     -webkit-border-radius: 50%;
   }
+}
+
+.form {
+  padding: 10px 20px 10px;
+}
+
+.input-range {
+  margin-bottom: 30px;
 }
