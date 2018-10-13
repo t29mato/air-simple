@@ -5,58 +5,33 @@ img {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-    position: relative;
-    min-height: 100%;
-  }
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #f5f5f5;
-  }
-   
-   
-  /* Custom page CSS
-  -------------------------------------------------- */
-  /* Not required for template or sticky footer method. */
-   
-  .container {
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
-  }
+  position: relative;
+  min-height: 100%;
+}
 
-.input-range[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #eaeaea;
-  height: 2px;
+body {
+/* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  border-radius: 6px;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
 
-  &:focus,
-  &:active {
-    outline: none;
-  }
 
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    position: relative;
-    width: 22px;
-    height: 22px;
-    display: block;
-    background-color: #07be19;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-  }
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
 }
 
 .form {
