@@ -2,7 +2,6 @@ var CACHE_NAME = 'air-consumption';
 var urlsToCache = [
   '/',
   '/?utm_source=homescreen',
-  '/css/style.css',
   '/img/formul.png',
   '/img/tank.svg',
 ];
